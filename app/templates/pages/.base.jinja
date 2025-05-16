@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');</style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.cyan.min.css">
+        <link rel="stylesheet" href="/static/css/styles.css">
+        <title>{%block title%}{% endblock %}</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a id="titleA" href="/">Supabase</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/">home</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+
+        
+
+    </body>
+    <footer>&copy 2025 Ben Martin</footer>
+</html>

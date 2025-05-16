@@ -1,0 +1,78 @@
+html,body{
+    height: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    min-height: 77%;
+}
+
+* {
+    font-family: "Quicksand", sans-serif;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: var(--pico-text-selection-color);
+    padding: 1rem;
+}
+
+#titleA {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#Hero {
+    background-color: var(--pico-primary-background);
+    min-height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Hero h1 {
+    color: var(--pico-color);
+    font-size: 5rem;
+    text-align: center;
+}
+
+
+#404 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+
+#things{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 2rem;
+}
+
+#details{
+    flex: 1;
+}
+
+#things article{
+width: 15rem;
+justify-content: center;
+align-items: center;
+}
+
+#things header{
+background-color: var(--pico-primary);
+}
+#things footer{
+    align-self: center;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    width: 100%;
+}

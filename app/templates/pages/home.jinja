@@ -1,0 +1,45 @@
+{% extends "pages/.base.jinja" %}
+
+{%block title%}Home page{%endblock%}
+
+{%block content%}
+<section id="Hero">
+   <h1>Supabase</h1>
+</section>
+
+<section>
+   <h2>Welcome!</h2>
+   <p>lorem ipsum dolem sit amore desectum </p>
+</section>
+<section id="things">
+
+   {%for thing in things%}
+
+      <article>
+         <header>
+            <h2>
+
+            {{thing["name"]}}
+
+            </h2>
+         </header>
+
+         <div id="details">
+            <p>{{thing["desc"]}}</p>
+
+            <p>Rating: {{thing["rating"]}}/10</p>
+
+            <p><strong>Cost: ${{thing["cost"]}}.00</strong></p>
+         </div>
+
+         <footer>
+            Delete
+         </footer>
+
+      </article>
+
+   {% endfor %}
+
+</section>
+   
+{%endblock%}
