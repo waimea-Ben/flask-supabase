@@ -1,19 +1,10 @@
 {% extends "pages/.base.jinja" %}
 
-{%block title%}Home page{%endblock%}
+{%block title%}Single thing{%endblock%}
 
 {%block content%}
-<section id="Hero">
-   <h1>Supabase</h1>
-</section>
 
-<section>
-   <h2>Welcome!</h2>
-   <p>lorem ipsum dolem sit amore desectum </p>
-</section>
 <section id="things">
-
-   {%for thing in things%}
 
       <article>
          <header>
@@ -33,13 +24,11 @@
          </div>
 
          <footer>
-         <a href="/delete/{{thing['id']}}"">Delete</a>
-         <a href="/thing/{{thing['id']}}"">More</a>
+            <a href="/delete/{{thing['id']}}"">Delete</a>
          </footer>
 
       </article>
 
-   {% endfor %}
 
 </section>
    

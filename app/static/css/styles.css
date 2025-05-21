@@ -68,7 +68,10 @@ align-items: center;
 background-color: var(--pico-primary);
 }
 #things footer{
+    display: flex;
     align-self: center;
+    min-width: 15rem;
+    justify-content: space-around;
 }
 
 footer {

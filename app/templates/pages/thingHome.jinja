@@ -1,0 +1,23 @@
+{% extends "pages/.base.jinja" %}
+
+{%block title%}Home page{%endblock%}
+
+{%block content%}
+
+<section>
+   <h2>List of things</h2>
+</section>
+
+   {%for thing in things%}
+
+         <div id="details">
+            <h2><a href="/thing/{{thing['id']}}"">
+            {{ thing["id"]}}. {{ thing["name"]|capitalize }}
+            </a></h2>
+            
+            <br>
+         </div>
+
+   {% endfor %}
+   
+{%endblock%}
